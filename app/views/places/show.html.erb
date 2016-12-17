@@ -6,11 +6,16 @@
     <p><%= @place.category.title %></p>
     <p>Нравится ли Вам как работает данное заведение?</p>
     <div>
-    <%= link_to like_user_path(@place), method: :put do %>
-      Нравится: <%= @place.get_upvotes.size %>
-    <% end %>
-    <%= link_to dislike_user_path(@place), method: :put do %>
-      Не нравится: <%= @place.get_downvotes.size %>
+    <% unless current_user == @place.user %>
+      <%= link_to like_user_path(@place), method: :put do %>    
+       Нравится: <%= @place.get_upvotes.size %>
+      <% end %>
+      <%= link_to dislike_user_path(@place), method: :put do %>
+        Не нравится: <%= @place.get_downvotes.size %>
+      <% end %>
+    <% else %>
+      <span>Нравится: <b><%= @place.get_upvotes.size %></b></span>
+      <span>Не нравится: <b><%= @place.get_downvotes.size %></b></span>
     <% end %>
     </div>
   </div>
