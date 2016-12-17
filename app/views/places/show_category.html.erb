@@ -1,0 +1,14 @@
+<h1><%= @category.title %></h1>
+<% unless @places.empty? %>
+  <div class="places-block">
+    <% @places.each do |place|  %>
+      <div class="place-item">
+        <div class="photo"><%= image_tag place.image.url(:thumb) %></div>
+        <h5><%= link_to place.title, place_show_path(place) %></h5>       
+      </div>
+    <% end %> 
+  </div>
+<% else %>
+<p>В данной категории пока нет заведений</p>
+<% end %>
+<p><%= link_to "На главную", root_path %></p>

@@ -1,0 +1,33 @@
+.form-block{
+  label{
+    font-weight: normal;
+  }
+  .control-label-sm{
+    font-size: 10px;
+  }
+}
+.places-block{
+  .place-item{
+    width: 112px;
+    padding: 5px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 20px 20px;
+    text-align: center;
+    .photo{
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border-radius: 4px;
+      img{
+        width: 100%;        
+        height: auto; 
+        min-height: 100px;
+        display: block;       
+      }
+    }
+  }
+}
+.places-btn{
+  padding-top: 40px;
+}

@@ -1,0 +1,24 @@
+<h1>Все заведения</h1>
+<p>Выбрать категорию: 
+  <span>Все</span>
+  <% @categories.each do |category| %>
+    <%= link_to category.title, show_category_path(category) %>
+  <% end %>
+</p>
+<% unless @places.empty? %>
+  <div class="places-block">
+    <% @places.each do |place|  %>
+      <div class="place-item">
+        <div class="photo"><%= image_tag place.image.url(:thumb) %></div>
+        <h5><%= link_to place.title, place_show_path(place) %></h5>       
+      </div>
+    <% end %> 
+  </div>
+<% end %>
+<div class="places-btn">
+  <% if user_signed_in? %>
+    <p><%= link_to "Добавить заведение", new_place_path, class: "btn btn-primary" %></p>
+  <% else %>
+    <p>Если Вы хотите иметь возможность добавлять заведение, Вам необходимо авторирзоваться</p>
+  <% end %>
+</div>
