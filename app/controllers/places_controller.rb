@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
   
   def index
-    @places = Place.all.order('id DESC').page(params[:page]).per(3) 
+    @places = Place.all.page(params[:page]).per(14) 
     @categories = Category.all    
   end
 
@@ -44,6 +44,20 @@ class PlacesController < ApplicationController
     @category = Category.find(params[:id]) 
     @places = Place.where(category_id: @category.id)   
   end
+
+  def upvote 
+    @place = Place.find(params[:id])
+    @place.upvote_by current_user
+    redirect_to :back
+  end  
+
+  def downvote
+    @place = Place.find(params[:id])
+    @place.downvote_by current_user
+    redirect_to :back
+  end
+
+
 
   private
   def place_params

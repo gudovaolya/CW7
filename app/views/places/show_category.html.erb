@@ -4,7 +4,21 @@
     <% @places.each do |place|  %>
       <div class="place-item">
         <div class="photo"><%= image_tag place.image.url(:thumb) %></div>
-        <h5><%= link_to place.title, place_show_path(place) %></h5>       
+        <h5><%= link_to place.title, place_show_path(place) %></h5> 
+        <div class="rating">       
+          <% @vote = (place.get_upvotes.size + place.get_downvotes.size) %>
+          <% @rating = place.get_upvotes.size %>
+          <div class="rating-wrap">
+            <div class="rating-star" style=<%= "width:#{@vote*10}px"%>></div>
+          </div>
+         
+          <% unless @vote == 0 %>
+            <span>Рейтинг: <%= @rating/@vote %>,<br> Проголосовали: <%= @vote %></span> 
+          <% else %>
+            Ретинг: 0,<br>
+            Проголосовали: <%= @vote %>
+          <% end %> 
+        </div>        
       </div>
     <% end %> 
   </div>

@@ -1,3 +1,17 @@
-<p><%= @place.title %></p>
-<p><%= @place.description %></p>
-<p><%= @place.category.title %></p>
+<h1><%= @place.title %></h1>
+<div class="place-detail clearfix">
+  <div class="photo"><%= image_tag @place.image.url(:medium) %></div>
+  <div class="place-descr">    
+    <p><%= @place.description %></p>
+    <p><%= @place.category.title %></p>
+    <p>Нравится ли Вам как работает данное заведение?</p>
+    <div>
+    <%= link_to like_user_path(@place), method: :put do %>
+      Нравится: <%= @place.get_upvotes.size %>
+    <% end %>
+    <%= link_to dislike_user_path(@place), method: :put do %>
+      Не нравится: <%= @place.get_downvotes.size %>
+    <% end %>
+    </div>
+  </div>
+</div>

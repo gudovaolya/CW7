@@ -38,6 +38,27 @@ places = Place.create!([
     agree: true
   },
   {
+    title: "Ресторан-4",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 1,
+    category_id: 1,
+    agree: true
+  },
+  {
+    title: "Ресторан-5",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 2,
+    category_id: 1,
+    agree: true
+  },
+  {
+    title: "Ресторан-6",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 3,
+    category_id: 1,
+    agree: true
+  },
+  {
     title: "Кафе-1",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
     user_id: 1,
@@ -59,6 +80,27 @@ places = Place.create!([
     agree: true
   },
   {
+    title: "Кафе-4",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 1,
+    category_id: 2,
+    agree: true
+  },
+  {
+    title: "Кафе-5",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 2,
+    category_id: 2,
+    agree: true
+  },
+  {
+    title: "Кафе-6",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 3,
+    category_id: 2,
+    agree: true
+  },
+  {
     title: "Бар-1",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
     user_id: 1,
@@ -69,6 +111,20 @@ places = Place.create!([
     title: "Бар-2",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
     user_id: 2,
+    category_id: 3,
+    agree: true
+  },
+   {
+    title: "Бар-3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 1,
+    category_id: 3,
+    agree: true
+  },
+  {
+    title: "Бар-4",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 3,
     category_id: 3,
     agree: true
   }

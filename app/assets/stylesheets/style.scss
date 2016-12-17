@@ -33,3 +33,23 @@
 .places-btn{
   padding-top: 40px;
 }
+.place-detail{
+  .photo{
+    float: left;    
+  }
+  .place-descr{
+    margin: 0 0 0 320px;
+  }
+}
+.rating{
+  font-size: 9px;
+}
+.rating-wrap{
+  width: 100%;
+  background: #ccc;
+}
+.rating-star{
+  height: 10px;
+  background: #286090;
+  max-width: 100%;
+}
