@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
   
   def index
-    @places = Place.all 
+    @places = Place.all.order('id DESC').page(params[:page]).per(3) 
     @categories = Category.all    
   end
 

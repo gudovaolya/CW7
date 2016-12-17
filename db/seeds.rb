@@ -15,3 +15,61 @@ user1 = User.create!(name: 'User1', email: 'user1@example.com', password: '12345
 user2 = User.create!(name: 'User2', email: 'user2@example.com', password: '123456', password_confirmation: '123456')
 user3 = User.create!(name: 'User3', email: 'user3@example.com', password: '123456', password_confirmation: '123456')
 
+places = Place.create!([
+  {
+    title: "Ресторан-1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 1,
+    category_id: 1,
+    agree: true
+  },
+  {
+    title: "Ресторан-2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 2,
+    category_id: 1,
+    agree: true
+  },
+  {
+    title: "Ресторан-3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 3,
+    category_id: 1,
+    agree: true
+  },
+  {
+    title: "Кафе-1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 1,
+    category_id: 2,
+    agree: true
+  },
+  {
+    title: "Кафе-2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 2,
+    category_id: 2,
+    agree: true
+  },
+  {
+    title: "Кафе-3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 3,
+    category_id: 2,
+    agree: true
+  },
+  {
+    title: "Бар-1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 1,
+    category_id: 3,
+    agree: true
+  },
+  {
+    title: "Бар-2",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat consectetur ipsam unde dolor ab, nam alias illo aut autem minima quia fugiat, doloribus libero, possimus cupiditate explicabo error provident.",
+    user_id: 2,
+    category_id: 3,
+    agree: true
+  }
+])
